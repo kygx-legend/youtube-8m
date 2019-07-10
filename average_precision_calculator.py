@@ -112,6 +112,7 @@ class AveragePrecisionCalculator(object):
       raise ValueError("the shape of predictions and actuals does not match.")
 
     if num_positives is not None:
+      print(num_positives)
       if not isinstance(num_positives, numbers.Number) or num_positives < 0.5:
         raise ValueError(
             "'num_positives' was provided but it wan't a nonzero number.")
